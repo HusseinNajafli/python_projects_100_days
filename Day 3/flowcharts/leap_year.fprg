@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="NHussein"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-10-17 03:24:30 PM"/>
+        <attribute name="created" value="Tkh1c3NlaW47SE4tV0lOMTA7MjAyMS0xMC0xNzswMzoyMDoyNSBQTTsyNjEz"/>
+        <attribute name="edited" value="Tkh1c3NlaW47SE4tV0lOMTA7MjAyMS0xMC0xNzswMzoyNDozMCBQTTsyOzI3MjI="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <output expression="&quot;Which year do you want to check?&quot;" newline="True"/>
+            <declare name="year" type="Integer" array="False" size=""/>
+            <input variable="year"/>
+            <if expression="year % 4 == 0">
+                <then>
+                    <if expression="year % 100 == 0">
+                        <then>
+                            <if expression="year % 400 == 0">
+                                <then>
+                                    <output expression="&quot;Leap year.&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <output expression="&quot;Not leap year.&quot;" newline="True"/>
+                                </else>
+                            </if>
+                        </then>
+                        <else>
+                            <output expression="&quot;Leap year.&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <output expression="&quot;Not leap year.&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
