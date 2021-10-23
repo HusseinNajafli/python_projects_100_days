@@ -7,3 +7,4 @@ Python is my favourite programming language.
 """
 
 print("Day 1 - Lab 2")
+print("Git and Python")
